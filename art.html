@@ -2,52 +2,139 @@
 <html lang = "en-US">
 <head>
 	<link href='css/style1.css' rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
 	<style>
-		#list1{
-			text-align: left;
-		}
+		button.artMenu {
+			background-color: lightcyan;
+			border-radius: 18px;
+            font-family: IBM Plex Mono;
+            font-size: 20px;
+            color: mediumblue;
+            margin: 2px;
+        }
+        
+        /*a.mark:link, a.mark:visited{
+        	color: mediumblue;
+        	text-decoration: none;
+        }*/
+        .sidenav{
+        	height: auto; /* Full-height: remove this if you want "auto" height */
+            width: 200px; /* Set the width of the sidebar */
+            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+            z-index: auto; /* Stay on top */
+            top: 0; /* Stay at the top */
+            right: 0;
+            background-color:none; /* Black */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            overflow-y: hidden;
+            padding-top: 20px;
+        }
 
-		a.none:link, a.none:visited, a.none:hover{
-			text-decoration: none;
-			color: red
-		}
+        .sidenav a:visited, .sidenav a:link{
+            padding: 6px 8px 6px 16px;
+            color: mediumblue;
+        	text-decoration: none;
+        }
 
-		button.menu {background-color: mistyrose; 
-			color: lightseagreen;
-			font-size: 30px;
-			border: 1px solid dodgerblue;
-			margin:2px;}
+        .main {
+            margin-right: 200px; /* Same as the width of the sidebar */
+            padding: 0px 0px;
+        }
 
-		button.menu :hover{
-			color: yellow;
-			border: 1px solid yellow;
-			background-color:greenyellow;}
-		
+        .wrapper {
+            position: relative;
+            padding-bottom: 57%; /* 16:9 */
+            padding-top: 0px;
+            height: 0;
+        }
+        .wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90%;
+            height: 90%;
+        }
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+       
 	</style>
-<title>@jijiglamorous/art</title>
-<meta charset="UTF-8">
+    <title>@jijiglamorous/art</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div id="list1">
-		<a class="none" href="index.html"><button class="menu">Home</button></a>
-		<a class="none" href="art.html"><button class="menu">Art</button></a>
-		<button class="menu">Tech</button>
-		<button class="menu">Aesthetic</button>
-		<button class="menu">Moodboard</button>
-		<button class="menu">Contact</button>
+	<div id="listMenu">
+		<a href="index.html"><button class="menu">Home</button></a>
+		<a href="art.html"><button class="menu">Art</button></a>
+		<a href="tech.html"><button class="menu">Tech</button></a>
+		<a href="jianyu.html"><button class="menu">JianYu</button></a>
 	</div>
-	<p style="height: 130px;"></p>
-
-	<h1>What do you want?</h1> 
-	<p style="text-align: center;">
-	   I want <button>drawings</button> <br>
-	   I want <button>objects</button> <br>
-	   I want <button>electricity</button> <br>
-	   I want <button>installation</button>
-
-	</p>
+	<br><br>
+ 
+    <!--side navigation-->
+	<div class="sidenav" style="text-align: left; margin-left: 2%">
+	   <button class="artMenu"><a class="mark" href="#LED">LED</a></button> <br>
+	   <button class="artMenu"><a class="mark" href="#Draw">Drawing & Painting</button></a><br>
+	   <button class="artMenu"><a class="mark" href="#Ceramics">Ceramics</button></a><br>
+	   <button class="artMenu"><a class="mark" href="#Installation">Installation</a></button>
+	</div>
 	
+	<div class="main">
+   
+    <!-- LED-->
+    <section id="LED" style="text-align: center;">
+    	<img src="images/Art/head_side.jpg" alt="LED art head sculpture" style=" width: 90%; height: auto; margin-left:60px; padding: 0; display: block;">
+    	<div class="wrapper">
+    	    <iframe src="https://player.vimeo.com/video/366047049" frameborder="0" allow="autoplay; fullscreen" allowfullscreen width= 100%; height= 100%; style="  margin-left:60px; padding: 0; display: block;" ></iframe>
+    	</div>
+        <img height="600" width="auto" src="images/Art/led outfit.png" alt="glamorous outfit" style="margin-top: 60px">
+        <img src="images/Art/LED performance.jpg" alt="jiji performing" style="width: 90%; height: auto; margin-left:60px; padding: 0; display: block;">
+        <img src="images/Art/EL dollhouse.jpg" alt="light dollhouse" style="width: 90%; height: auto; margin-left:60px; padding: 0; display: block;">
+        <img src="images/Art/EL.jpg" alt="jiji at all club" style="width: 50%; height: auto; margin-left:29%; margin-top: 15px; padding: 0; display: block;">
+    </section>
 
+    <section id="Draw" style="text-align: center; margin-top: 150px"  >
+    	<img src="images/Art/wine.gif" alt="decortive element">
+    	<img src="images/Art/starry.jpg" alt="painting of a starry night" style="width: 70%; height: auto; margin-left:15%; margin-bottom: 80px; padding: 0; display: block;">
+    	<img src="images/Art/shadowbox.jpg" alt="shadowbox painting" style="width: 80%; height: auto; margin-left:10%; margin-bottom: 80px; padding: 0; display: block;">
+    	<img src="images/Art/machine girl.jpg" alt="robot girl and a rabbit" style="width: 80%; height: auto; margin-left:10%; margin-bottom: 80px; padding: 0; display: block;">
+    	<img src="images/Art/space girl.jpg" alt="girl coming out of a spaceship" style="width: 50%; height: auto; margin-left:25%; margin-bottom: 80px; padding: 0; display: block;">
+    </section>
+
+    <section id="Ceramics" style="text-align: center; margin-top: 150px" >
+    	<img src="images/Art/smiley.gif" alt="decorative element" style="margin-bottom: 30px">
+    	<img src="images/Art/lioness cup.jpg" alt="cup with a lion drawing" style="width: 50%; height: auto; margin-left:25%; margin-bottom: 80px; padding: 0; display: block;">
+    	<img src="images/Art/necklace woman.jpg" alt="cup with a headless woman drawing" style="width: 50%; height: auto; margin-left:25%; margin-bottom: 80px; padding: 0; display: block;">
+    	<img src="images/Art/purple crack cup_2.jpg" alt="white cup with purple cup" style="width: 70%; height: auto; margin-left:15%; margin-bottom: 80px; padding: 0; display: block;">
+    </section>
+
+    <section id="Installation" style="text-align: center; margin-top: 150px">
+    	<img src="images/Art/lightning.gif" alt="striking lightning" style="margin-bottom: 30px">
+    	<img src="images/Art/jian and d hangout.png" alt="icon of girl in installation" style="width: 30%; height: auto; margin-left:55%; margin-bottom: 30px; padding: 0; display: block;">
+    	<img src="images/Art/j and d hangout_3.jpg" alt="art installation" style="width: 90%; height: auto; margin-left:60px; padding: 0; display: block;">
+    	<img src="images/Art/j and d hangout_1.jpg" alt="art installation" style="width: 90%; height: auto; margin-left:60px; padding: 0; display: block;">
+    	<img src="images/Art/j and d hangout_2.jpg" alt="art installation" style="width: 90%; height: auto; margin-left:60px; margin-bottom: 90px; padding: 0; display: block;">
+
+
+    	<img src="images/Art/guineapig popstar.jpg" alt="art installation" style="width: 90%; height: auto; margin-left:60px; padding: 0; display: block;">
+    	<img src="images/Art/guineapig popstar_2.jpg" alt="art installation" style="width: 90%; height: auto; margin-left:60px; padding: 0; display: block;">
+    	<img src="images/Art/guineapig popstar_3.jpg" alt="art installation" style="width: 90%; height: auto; margin-left:60px; margin-bottom: 20px; padding: 0; display: block;">
+    	<img src="images/Art/poster.jpg" alt="art installation" style="width: 50%; height: auto; margin-left:25%; margin-bottom: 20px; padding: 0; display: block;">
+    </section>
+    </div>
+
+	<br>
+	<hr>
+    <address>
+		Jian Yu   jiannyuu.com<br>
+		miss.jian.yu@gmail.com   Shanghai, China<br>
+	</address>
 </body>
 </html>

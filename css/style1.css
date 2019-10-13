@@ -3,7 +3,32 @@ body{
 	background-color: #e6ffe6;
 }
 h1{
-  color: #8c8c8c;
-  font-family: helvetica;
-  text-align: center;
+    color: #8c8c8c;
+    font-family: helvetica;
+    text-align: center;
+}
+button.menu {
+    background-color: mistyrose; 
+	color: lightseagreen;
+	font-size: 30px;
+	border: 1px solid dodgerblue;
+	margin:2px;
+}
+
+button.menu:hover{
+	color: yellow;
+	border: 1px solid yellow;
+	background-color:greenyellow;
+}
+
+#listMenu{
+	text-align: left;
+	margin-left: 60px;
+	margin-top: 28px;
+}
+
+address {
+	color: #8c8c8c;
+    font-family: helvetica;
+    font-size: 11px;
 }
